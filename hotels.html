@@ -6,21 +6,18 @@
 </head>
 <body class="page">
 
-<header class="main-header">
-  <nav class="main-navigation">
+<header class="main_header">
+  <nav class="main_navigation">
+    <a class="main_header_logo">
+      <img src="img/index-logo.svg" width="100" height="100" alt="Логотип седоны">
+    </a>
     <ul class="site-navigation">
-      <li class="nav_item" ><a class="nav_link" href="info.html">информация</a></li>
-      <li class="nav_item"><a class="nav_link" href="photo.html">фото и видео</a></li>
-
-      <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="100" height="100" alt="Логотип седоны">
-      </a>
-
-      <li class="nav_item"><a class="nav_link" href="maps.html">карта штата</a></li>
+      <li class="nav_item"><a class="nav_link" href="#">Информация</a></li>
+      <li class="nav_item"><a class="nav_link" href="#">Фото и видео</a></li>
+      <li class="nav_item"><a class="nav_link" href="#">Карта штата</a></li>
       <li class="nav_item"><a class="nav_link" href="hotels.html">гостиницы</a></li>
     </ul>
   </nav>
-
 </header>
 
 
@@ -40,15 +37,13 @@
    <button class="sort_btn sort_btn_up"><span class="visyally_hidden">По возрастанию</span></button>
    <button class="sort_btn sort_btn_down sort_btn_active"><span class="visyally_hidden">По убыванию</span></button>
  </div>
-
 </div>
-
   <section class="hotels">
     <h2 class="visually-hidden">Найденные гостинницы</h2>
     <ul class="hotels_list">
       <li class="hotels_item">
         <figure class="hotel">
-          <img class="hotel_image"><!-- картинки -->
+          <img class="hotel_image" src="http://via.placeholder.com/350x150" width="" height="" alt="">
           <figcaption class="hotel_spec">
             <div class="hotel_desc">
               <a class="hotel_link" href="#"><h3 class="hotel_title">Amara Resort & SPA</h3></a>
@@ -70,39 +65,81 @@
                 <li class="rate_item"></li>
               </ul>
               <span class="rate">Рейтинг: <output>8,5</output></span>
-
             </div>
-
-
+          </figcaption>
+        </figure>
+      </li>
+      <li class="hotels_item">
+        <figure class="hotel">
+          <img class="hotel_image" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+          <figcaption class="hotel_spec">
+            <div class="hotel_desc">
+              <a class="hotel_link" href="#"><h3 class="hotel_title">Desert Quail Inn</h3></a>
+              <p class="hotel_info">
+                <span class="hotel_type">Мотель</span>
+                <span class="hotel_price">От 3000 р.</span>
+              </p>
+              <div class="hotel_btns">
+                <a class="hotel_btn">Подробнее</a>
+                <a class="hotel_btn hotel_btn_book">Забронировать</a>
+              </div>
+            </div>
+            <div class="hotel_rate">
+              <span class="visually_hidden">3 звезды</span>
+              <ul class="rate_list">
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+              </ul>
+              <span class="rate">Рейтинг: <output>8,9</output></span>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="hotels_item">
+        <figure class="hotel">
+          <img class="hotel_image" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+          <figcaption class="hotel_spec">
+            <div class="hotel_desc">
+              <a class="hotel_link" href="#"><h3 class="hotel_title">Villas At Poco Diablo</h3></a>
+              <p class="hotel_info">
+                <span class="hotel_type">Апартаменты</span>
+                <span class="hotel_price">От 2000 р.</span>
+              </p>
+              <div class="hotel_btns">
+                <a class="hotel_btn">Подробнее</a>
+                <a class="hotel_btn hotel_btn_book">Забронировать</a>
+              </div>
+            </div>
+            <div class="hotel_rate">
+              <span class="visually_hidden">2 звезды</span>
+              <ul class="rate_list">
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+              </ul>
+              <span class="rate">Рейтинг: <output>9,2</output></span>
+            </div>
           </figcaption>
         </figure>
       </li>
     </ul>
   </section>
-
 </main>
 
-<footer class="main-footer">
-  <p class="footer-contacts">
+
+<footer class="main_footer">
+  <a class="footer_hashtag" href="#">
     #visitsedona
-  </p>
-
-  <div class="footer-social">
-    <ul class="social">
-      <li><a class="social-button" href="#">твитер</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">ютуб</a></li>
-    </ul>
-  </div>
-
-  <p class="footer-copyright">
-    <b>website by</b>
-    <figure class="footer-logo">
-      <a href="#"><img src="img/logo-academy.jpg" width="300" height="300" alt="лого академии"></a>
-    </figure>
-  </p>
-
-
+  </a>
+  <ul class="social_list">
+    <li class="social_item"><a class="social_button" href="#">Твитер</a></li>
+    <li class="social_item"><a class="social_button" href="#">Фейсбук</a></li>
+    <li class="social_item"><a class="social_button" href="#">Ютуб</a></li>
+  </ul>
+  <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+    <span>website by</span>
+    <img class="intro_img" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+  </a>
 </footer>
 
 </body>
