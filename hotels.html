@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гостиницы</title>
+</head>
+<body class="page">
+
+<header class="main-header">
+  <nav class="main-navigation">
+    <ul class="site-navigation">
+      <li class="nav_item" ><a class="nav_link" href="info.html">информация</a></li>
+      <li class="nav_item"><a class="nav_link" href="photo.html">фото и видео</a></li>
+
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="100" height="100" alt="Логотип седоны">
+      </a>
+
+      <li class="nav_item"><a class="nav_link" href="maps.html">карта штата</a></li>
+      <li class="nav_item"><a class="nav_link" href="hotels.html">гостиницы</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+
+<main class="main">
+<div class="hotels_form_container">
+  <form class="hotels_form"></form>
+</div>
+<div class="serch_result">
+  <span class="found">Найдено: <output>3</output></span>
+  <span class="sort">Сортировка:</span>
+  <ul class="sort_list">
+    <li class="sort_item sort_item_active"><a class="sort_link">По цене</a></li>
+    <li class="sort_item"><a class="sort_link">По типу</a></li>
+    <li class="sort_item"><a class="sort_link">По рейтингу</a></li>
+  </ul>
+ <div class="sort_btns">
+   <button class="sort_btn sort_btn_up"><span class="visyally_hidden">По возрастанию</span></button>
+   <button class="sort_btn sort_btn_down sort_btn_active"><span class="visyally_hidden">По убыванию</span></button>
+ </div>
+
+</div>
+
+  <section class="hotels">
+    <h2 class="visually-hidden">Найденные гостинницы</h2>
+    <ul class="hotels_list">
+      <li class="hotels_item">
+        <figure class="hotel">
+          <img class="hotel_image"><!-- картинки -->
+          <figcaption class="hotel_spec">
+            <div class="hotel_desc">
+              <a class="hotel_link" href="#"><h3 class="hotel_title">Amara Resort & SPA</h3></a>
+              <p class="hotel_info">
+                <span class="hotel_type">Гостиница</span>
+                <span class="hotel_price">От 4000 р.</span>
+              </p>
+              <div class="hotel_btns">
+                <a class="hotel_btn">Подробнее</a>
+                <a class="hotel_btn hotel_btn_book">Забронировать</a>
+              </div>
+            </div>
+            <div class="hotel_rate">
+              <span class="visually_hidden">4 звезды</span>
+              <ul class="rate_list">
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+                <li class="rate_item"></li>
+              </ul>
+              <span class="rate">Рейтинг: <output>8,5</output></span>
+
+            </div>
+
+
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="main-footer">
+  <p class="footer-contacts">
+    #visitsedona
+  </p>
+
+  <div class="footer-social">
+    <ul class="social">
+      <li><a class="social-button" href="#">твитер</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">ютуб</a></li>
+    </ul>
+  </div>
+
+  <p class="footer-copyright">
+    <b>website by</b>
+    <figure class="footer-logo">
+      <a href="#"><img src="img/logo-academy.jpg" width="300" height="300" alt="лого академии"></a>
+    </figure>
+  </p>
+
+
+</footer>
+
+</body>
+</html>

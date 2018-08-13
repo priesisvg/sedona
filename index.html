@@ -1,134 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body class="page">
 
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="nav_item" ><a class="nav_link" href="info.html">информация</a></li>
-        <li class="nav_item"><a class="nav_link" href="photo.html">фото и видео</a></li>
-
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="100" height="100" alt="Логотип седоны">
-        </a>
-
-        <li class="nav_item"><a class="nav_link" href="maps.html">карта штата</a></li>
-        <li class="nav_item"><a class="nav_link" href="hotel.html">гостиницы</a></li>
-      </ul>
-    </nav>
-
-  </header>
+<header class="main_header">
+  <nav class="main_navigation">
+    <a class="main_header_logo">
+      <img src="img/index-logo.svg" width="100" height="100" alt="Логотип седоны">
+    </a>
+    <ul class="site-navigation">
+      <li class="nav_item"><a class="nav_link" href="#">Информация</a></li>
+      <li class="nav_item"><a class="nav_link" href="#">Фото и видео</a></li>
+      <li class="nav_item"><a class="nav_link" href="#">Карта штата</a></li>
+      <li class="nav_item"><a class="nav_link" href="hotels.html">гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
 
 
+<main class="container">
+  <div class="intro">
+    <img class="intro_img" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+  </div>
+  <div class="promo">
+    <h1 class="promo_title">Седона - небольшой городок в аризоне,<br>заслуживающий большего! </h1>
+    <p class="promo_desc"> Рассмотрим 5 причин, по которым седона круче, чем гранд каньон! </p>
+  </div>
+  <section class="reasons">
+    <h2 class="visually_hidden">Причины посетить Седону</h2>
+    <ol class="reasons_list">
+      <li class="reasons_item">
+        <div class="reason_info">
+          <h3 class="reason_info_title">Настоящий городок</h3>
+          <span class="reason_info_number">- №1 -</span>
+          <p class="reason_info_desc">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="reason_image" src="http://via.placeholder.com/350x150" width="" height="" alt="">
 
-  <main class="container">
-
-    <figure>
-      <p><img src="images/sedona.jpg" alt="фон sedona" /></p>
-    </figure>
-
-    <h1 class="visually-hidden">седона - небольшой городок в аризоне,<br>заслуживающий большего! </h1>
-    <h2 class="visually-hidden"> рассмотрим 5 причин, по которым седона круче, чем гранд каньон! </h2>
-
-    <div class="gallery">
-      <h3>настоящий<br>городок</h3>
-      <p>- №1 -</p>
-      <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
-    </div>
-
-    <div class="gallery">
-      <figure class="gallery-content">
-        <a href="#"><img src="img/sity.jpg" width="100" height="300" alt="Город"></a>
-      </figure>
-    </div>
-
-    <section class="content">
-      <ul class="content-list">
-        <li class="content-item">
-          <h3>жильё</h3>
-          <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li class="content-item">
-          <h3>еда</h3>
-          <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="content-item">
-          <h3>сувениры</h3>
-          <p>не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-    </section>
-
-    <div class="gallery">
-      <figure class="gallery-content">
-        <a href="#"><img src="img/bridge.jpg" width="100" height="300" alt="мост"></a>
-      </figure>
-    </div>
-
-    <div class="gallery">
-      <h3>там есть<br>мост дьявола</h3>
-      <p>- №2 -</p>
-      <p>да, по нему можно пройти если конечно<br>вы осмелитесь</p>
-    </div>
-
-    <section class="content">
-      <ul class="content-list">
-        <li class="content-item">
-          <h3>небольшая<br>площадь</h3>
-          <p>- №3 -</p>
-          <p>все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="content-item">
-          <h3>красивая<br>дорога</h3>
-          <p>- №4 -</p>
-          <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
-        </li>
-        <li class="content-item">
-          <h3>мало туристов</h3>
-          <p>- №5 -</p>
-          <p>большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ul>
-    </section>
-
-    <div class="map">
-      <h2>заинтересовались?</h2>
-      <p>укажите предполагаемые даты поездки.<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <figure class="gallery-content">
-        <a href="#"><img src="img/map.jpg" width="300" height="300" alt="карта"></a>
-        <!-- здесь будет форма -->
-
-      </figure>
-    </div>
-
-  </main>
-
-   <footer class="main-footer">
-     <p class="footer-contacts">
-       #visitsedona
-     </p>
-
-     <div class="footer-social">
-       <ul class="social">
-         <li><a class="social-button" href="#">твитер</a></li>
-         <li><a class="social-button" href="#">Фейсбук</a></li>
-         <li><a class="social-button" href="#">ютуб</a></li>
-       </ul>
-     </div>
-
-     <p class="footer-copyright">
-       <b>website by</b>
-       <figure class="footer-logo">
-         <a href="#"><img src="img/logo-academy.jpg" width="300" height="300" alt="лого академии"></a>
-       </figure>
-     </p>
+        <ul class="advantages_list">
+          <li class="advantages_item">
+            <h4 class="advantage_title">Жильё</h4>
+            <p class="advantage_desc"></p>
+          </li>
+          <li class="advantages_item">
+            <h4 class="advantage_title">Еда</h4>
+            <p class="advantage_desc"></p>
+          </li>
+          <li class="advantages_item">
+            <h4 class="advantage_title">Сувениры</h4>
+            <p class="advantage_desc"></p>
+          </li>
+        </ul>
+      </li>
 
 
-   </footer>
+      <li class="reasons_item">
+        <img class="reason_image" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+        <div class="reason_info">
+          <h3 class="reason_info_title">Там есть<br>мост дьявола</h3>
+          <span class="reason_info_number">- №2 -</span>
+          <p class="reason_info_desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </li>
 
-  </body>
+      <li class="reasons_item reason_item_bottom">
+        <h3 class="reason_info_title">Небольшая площадь</h3>
+        <span class="reason_info_number">- №3 -</span>
+        <p class="reason_info_desc">Все достопримечательности находятся очень близко</p>
+      </li>
+
+      <li class="reasons_item reason_item_bottom">
+        <h3 class="reason_info_title">Красивая дорога</h3>
+        <span class="reason_info_number">- №4 -</span>
+        <p class="reason_info_desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+
+      <li class="reasons_item reason_item_bottom">
+        <h3 class="reason_info_title">Мало туристов</h3>
+        <span class="reason_info_number">- №5 -</span>
+        <p class="reason_info_desc">Большинство едет в гранд каньон и толпится там</p>
+      </li>
+    </ol>
+  </section>
+  <div class="search_hotels">
+    <b class="search_hotels_titles">Заинтересовались?</b>
+    <p class="search_hotels_desc">Укажите предполагаемые даты поездки.<br>и мы покажем вам лучшие предложения гостиниц в
+      седоне</p>
+    <button class="search_hotels_btn" type="button">Поиск гостиницы в Седоне</button>
+    <!-- форма
+    -->
+  </div>
+
+  <section class="map">
+    <h3 class="visually_hidden">Карта</h3>
+  </section>
+</main>
+
+
+<footer class="main_footer">
+  <a class="footer_hashtag" href="#">
+    #visitsedona
+  </a>
+
+  <ul class="social_list">
+    <li class="social_item"><a class="social_button" href="#">Твитер</a></li>
+    <li class="social_item"><a class="social_button" href="#">Фейсбук</a></li>
+    <li class="social_item"><a class="social_button" href="#">Ютуб</a></li>
+  </ul>
+
+
+  <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+    <span>website by</span>
+    <img class="intro_img" src="http://via.placeholder.com/350x150" width="" height="" alt="">
+  </a>
+
+
+</footer>
+
+</body>
 </html>
