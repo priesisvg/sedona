@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Гостиницы</title>
+  <meta charset="UTF-8">
+  <title>Гостиницы</title>
 </head>
 <body class="page">
 
@@ -22,87 +22,70 @@
 
 
 <main class="main">
-<div class="hotels_form_container">
-  <form class="hotels_form" action="https://echo.htmlacademy.ru" method="get">
-    <section class="infrastructure">
-      <h3 class="infrastructure_title">Инфраструктура:</h3>
-      <ul class="infrastructure_list">
-        <li class="infrastructure_item">
-          <label class="infrastructure_label">
-            <input type="checkbox" name="pool" checked>
-            Бассеин
+  <div class="hotels_form_container">
+    <form class="hotels_form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="infrastructure">
+        <legend class="infrastructure_title">
+          Инфраструктура:
+        </legend>
+        <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+        <label class="custom_label" for="pool">Бассеин</label>
+        <input class="checkbox" type="checkbox" name="parking" id="parking">
+        <label class="custom_label" for="parking">Парковка</label>
+        <input class="checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+        <label class="custom_label" for="wi-fi">Wi-fi</label>
+      </fieldset>
+      <fieldset>
+        <legend class="accommodation">
+          Тип жилья:
+        </legend>
+        <input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+        <label class="custom_label" for="hotel">Гостиница</label>
+        <input class="checkbox" type="checkbox" name="motel" id="motel" checked>
+        <label class="custom_label" for="motel">Мотель</label>
+        <input class="checkbox" type="checkbox" name="apartments" id="apartments" checked>
+        <label class="custom_label" for="apartments">Апартаменты</label>
+      </fieldset>
+
+      <fieldset class="range">
+        <legend class="range-title">Стоимость в сутки (<span aria-label="в рублях">р</span>):</legend>
+        <div class="range-controls">
+          <label class="range-label range-label-min" for="price-min">
+            от
+            <output name="priceOutput" aria-hidden="true"></output>
           </label>
-        </li>
-        <li class="infrastructure_item">
-          <label class="infrastructure_label">
-            <input type="checkbox" name="parking">
-            Парковка
+          <input class="range-input visually-hidden" id="price-min" type="range" name="price" min="0" max="5000"
+                 step="100" value="0">
+          <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
+
+          <label class="range-label range-label-max" for="price-max">
+            до
+            <output name="priceOutput" aria-hidden="true"></output>
           </label>
-        </li>
-        <li class="infrastructure_item">
-          <label class="infrastructure_label">
-            <input type="checkbox" name="wi-fi">
-            Wi-fi
-          </label>
-        </li>
-      </ul>
-    </section>
-    <section class="accommodation">
-      <h3 class="accommodation_title">Тип жилья:</h3>
-      <ul class="accommodation_list">
-        <li class="accommodation_item">
-          <label class="accommodation_label">
-            <input type="checkbox" name="hotel" checked>
-            Гостиница
-          </label>
-        </li>
-        <li class="accommodation_item">
-          <label class="accommodation_label">
-            <input type="checkbox" name="motel" checked>
-            Мотель
-          </label>
-        </li>
-        <li class="accommodation_item">
-          <label class="accommodation_label">
-            <input type="checkbox" name="apartments" checked>
-            Аппартаменты
-          </label>
-        </li>
-      </ul>
-    </section>
-    <div class="price">
-      <h3 class="price_title">Стоимость в сутки (р):</h3>
-      <p class="price_field price_field_from">
-        <label class="price_label">От
-          <input type="text" name="price_min" value="0">
-        </label>
-      </p>
-      <p class="price_field price_field_till">
-        <label class="price_label">До
-          <input type="text" name="price_max" value="3000">
-        </label>
-      </p>
-      <p class="price_range">
-        <input type="range" name="price_level">
-        <span class="second_controller"></span>
-      </p>
+          <input class="range-input visually-hidden" id="price-max" type="range" name="price" min="0" max="5000"
+                 step="100" value="3000">
+          <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
+          <div class="range-scale">
+            <div class="range-bar"></div>
+          </div>
+        </div>
+        <button class="form_btn" type="submit">Показать</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class="serch_result">
+    <span class="found">Найдено: <output>3</output></span>
+    <span class="sort">Сортировка:</span>
+    <ul class="sort_list">
+      <li class="sort_item sort_item_active"><a class="sort_link">По цене</a></li>
+      <li class="sort_item"><a class="sort_link">По типу</a></li>
+      <li class="sort_item"><a class="sort_link">По рейтингу</a></li>
+    </ul>
+    <div class="sort_btns">
+      <button class="sort_btn sort_btn_up"><span class="visyally_hidden">По возрастанию</span></button>
+      <button class="sort_btn sort_btn_down sort_btn_active"><span class="visyally_hidden">По убыванию</span></button>
     </div>
-    <button class="form_btn" type="submit">Показать</button>
-  </form>
-</div>
-<div class="serch_result">
-  <span class="found">Найдено: <output>3</output></span>
-  <span class="sort">Сортировка:</span>
-  <ul class="sort_list">
-    <li class="sort_item sort_item_active"><a class="sort_link">По цене</a></li>
-    <li class="sort_item"><a class="sort_link">По типу</a></li>
-    <li class="sort_item"><a class="sort_link">По рейтингу</a></li>
-  </ul>
- <div class="sort_btns">
-   <button class="sort_btn sort_btn_up"><span class="visyally_hidden">По возрастанию</span></button>
-   <button class="sort_btn sort_btn_down sort_btn_active"><span class="visyally_hidden">По убыванию</span></button>
- </div>
-</div>
+  </div>
   <section class="hotels">
     <h2 class="visually-hidden">Найденные гостинницы</h2>
     <ul class="hotels_list">
@@ -203,7 +186,7 @@
   </ul>
   <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
     <span>website by</span>
-    <img src= "img/logo-htmlacademy.svg" width="100" height="100" alt="Лого HTML Академии">
+    <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Лого HTML Академии">
   </a>
 </footer>
 
