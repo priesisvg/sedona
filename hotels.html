@@ -23,7 +23,72 @@
 
 <main class="main">
 <div class="hotels_form_container">
-  <form class="hotels_form"></form>
+  <form class="hotels_form" action="https://echo.htmlacademy.ru" method="get">
+    <section class="infrastructure">
+      <h3 class="infrastructure_title">Инфраструктура:</h3>
+      <ul class="infrastructure_list">
+        <li class="infrastructure_item">
+          <label class="infrastructure_label">
+            <input type="checkbox" name="pool" checked>
+            Бассеин
+          </label>
+        </li>
+        <li class="infrastructure_item">
+          <label class="infrastructure_label">
+            <input type="checkbox" name="parking">
+            Парковка
+          </label>
+        </li>
+        <li class="infrastructure_item">
+          <label class="infrastructure_label">
+            <input type="checkbox" name="wi-fi">
+            Wi-fi
+          </label>
+        </li>
+      </ul>
+    </section>
+    <section class="accommodation">
+      <h3 class="accommodation_title">Тип жилья:</h3>
+      <ul class="accommodation_list">
+        <li class="accommodation_item">
+          <label class="accommodation_label">
+            <input type="checkbox" name="hotel" checked>
+            Гостиница
+          </label>
+        </li>
+        <li class="accommodation_item">
+          <label class="accommodation_label">
+            <input type="checkbox" name="motel" checked>
+            Мотель
+          </label>
+        </li>
+        <li class="accommodation_item">
+          <label class="accommodation_label">
+            <input type="checkbox" name="apartments" checked>
+            Аппартаменты
+          </label>
+        </li>
+      </ul>
+    </section>
+    <div class="price">
+      <h3 class="price_title">Стоимость в сутки (р):</h3>
+      <p class="price_field price_field_from">
+        <label class="price_label">От
+          <input type="text" name="price_min" value="0">
+        </label>
+      </p>
+      <p class="price_field price_field_till">
+        <label class="price_label">До
+          <input type="text" name="price_max" value="3000">
+        </label>
+      </p>
+      <p class="price_range">
+        <input type="range" name="price_level">
+        <span class="second_controller"></span>
+      </p>
+    </div>
+    <button class="form_btn" type="submit">Показать</button>
+  </form>
 </div>
 <div class="serch_result">
   <span class="found">Найдено: <output>3</output></span>
