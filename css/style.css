@@ -35,6 +35,8 @@ a {
   color: #000000;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  padding: 0 0;
+
 }
 
 .wrapper {
@@ -45,11 +47,15 @@ a {
 }
 
 .site_navigation {
+  width: 1200px;
+  height: 56px;
   font-size: 14px;
   line-height: 26px;
   color: #ffffff;
   background-color: #ffffff;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -57,6 +63,8 @@ a {
 .nav_link {
   color: #000000;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_link:hover {
@@ -130,11 +138,11 @@ a {
   font-weight: bold;
   margin: 0;
 }
-
 .reasons_info_number {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin: 0;
 }
 
 .reason_info_desc {
@@ -227,7 +235,7 @@ a {
   text-align: center;
   color: #ffffff;
   font-size: 21px;
-  line-height: auto;
+  line-height: 21;
   font-weight: bold;
   vertical-align: middle;
   text-transform: uppercase;
@@ -412,3 +420,249 @@ a {
   font-weight: normal;
   background-color: #f2f2f2;
 }
+/*--Сетки--*/
+
+.main_header_logo {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.main_navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-top: 75px;
+}
+
+.promo_desc {
+  margin: 0;
+  margin-bottom: 52px;
+  padding: 0;
+}
+
+.reasons {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 53px;
+}
+.reasons_item {
+  margin: 0;
+  padding: 0;
+}
+
+.reasons_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.reason_info_title {
+  width: 310px;
+  height: 160px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 0;
+  float: left;
+}
+
+.reasons_item img:first-of-type {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.reasons_item img:last-of-type {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.advantages_list {
+  margin: 0 ;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  clear: both;
+}
+
+.advantages_item {
+  margin: 0 ;
+  padding: 0;
+  width: 304px;
+  height: 166px;
+}
+
+.reasons_item_bottom {
+  margin: 0;
+  padding: 0;
+}
+
+.main_footer {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social_item {
+  display: inline-block;
+}
+
+/*--hotels_setki--*/
+
+.hotels_form {
+  margin: 0;
+  padding: 0;
+  height: 218px;
+  display: flex;
+}
+
+.hotels_title {
+  margin: 0;
+  padding: 0;
+  margin-left: 71px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+}
+.hotels_title:nth-child(2) {
+  margin-right: 370px;
+}
+.range {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.serch_result {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 70px;
+  height: 88px;
+  display: flex;
+}
+
+.found {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+}
+
+.sort {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.sort_list {
+  margin: 0;
+  margin-right: 500px;
+  padding: 0;
+}
+
+.sort_item {
+  padding-right: 35px;
+  display: inline-block;
+}
+
+.sort_btns {
+  margin: 0px;
+  margin-right: 73px;
+  padding: 0px;
+}
+
+
+.hotels {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels_list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hotels_item {
+  margin: 0px;
+  padding: 0px;
+  height: 152px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hotels_item img {
+  margin-bottom: 30px;
+  margin-top: 18px;
+  margin-left: 45px;
+  margin-right: 30px;
+  padding: 0px;
+}
+
+.hotel_title {
+  margin: 0px;
+  margin-top: 30px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.hotel_info {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 11px;
+}
+.hotel_type {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 40px;
+}
+.hotel_price {
+  margin: 0px;
+  padding: 0px;
+}
+.hotel_btns {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 32px;
+}
+.rate {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.rate_list {
+  margin-bottom: 47px;
+  margin-top: 30px;
+  margin-left: 600px;
+  margin-right: 73px;
+  padding: 0px;
+}
+
