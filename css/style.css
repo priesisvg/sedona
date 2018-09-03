@@ -301,7 +301,8 @@ a {
   text-transform: uppercase;
   background-color: #766357;
   border: none;
-  padding: 28px 160px;
+  width: 568px;
+  padding: 28px;
 }
 
 .search_hotels .search_hotels_btn:hover {
@@ -665,7 +666,30 @@ a {
   padding-left: 30px;
   position: relative;
 }
+.checkbox {
+  position: absolute;
+}
 
+.search_form {
+  width: 568px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 316px;
+  background-color: #ffffff;
+  min-height: 395px;
+  position: absolute;
+  z-index: 3;
+}
 
-
+.data_change {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  display: flex;
+  width: 458px;
+  box-sizing: border-box;
+  margin: 15px 56px;
+}
 
