@@ -189,6 +189,7 @@ a {
   margin: 0;
   margin-bottom: 52px;
   padding: 0;
+  margin-top: 27px;
 }
 
 .reasons_list {
@@ -256,8 +257,8 @@ a {
 .reason_info {
   width: 400px;
   color: #ffffff;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 44px;
+  padding-bottom: 50px;
 
 }
 
@@ -265,9 +266,10 @@ a {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  margin: 0;
   width: 201px;
   margin: 0 auto;
+  margin-bottom: 20px;
+
 }
 
 .reasons_info_number {
@@ -275,13 +277,18 @@ a {
   line-height: 21px;
   font-weight: normal;
   margin: 0;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .reason_info_desc {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 auto;
+  width: 310px;
+
+
 }
 
 .advantages_list {
@@ -910,7 +917,7 @@ a {
   background-image: url("../img/icon-down-active.svg");
 }
 
-/* форма в отелях */
+/* --------------------------------------------форма в отелях--------------------------------------------- */
 
 .visually-hidden {
   position: absolute;
@@ -1058,3 +1065,4 @@ a {
 .btn-transparent:focus::-moz-focus-inner {
   border: 0;
 }
+
