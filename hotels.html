@@ -32,49 +32,49 @@
           <legend class="infrastructure_title">
             Инфраструктура:
           </legend>
-          <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+          <input class="checkbox visually_hidden" type="checkbox" name="pool" id="pool" checked>
           <label class="custom_label" for="pool">Бассеин</label>
-          <input class="checkbox" type="checkbox" name="parking" id="parking">
+          <input class="checkbox visually_hidden" type="checkbox" name="parking" id="parking">
           <label class="custom_label" for="parking">Парковка</label>
-          <input class="checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+          <input class="checkbox visually_hidden" type="checkbox" name="wi-fi" id="wi-fi">
           <label class="custom_label" for="wi-fi">Wi-fi</label>
         </fieldset>
         <fieldset class="hotels_title">
           <legend class="accommodation">
             Тип жилья:
           </legend>
-          <input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+          <input class="checkbox visually_hidden" type="checkbox" name="hotel" id="hotel" checked>
           <label class="custom_label" for="hotel">Гостиница</label>
-          <input class="checkbox" type="checkbox" name="motel" id="motel" checked>
+          <input class="checkbox visually_hidden" type="checkbox" name="motel" id="motel" checked>
           <label class="custom_label" for="motel">Мотель</label>
-          <input class="checkbox" type="checkbox" name="apartments" id="apartments" checked>
+          <input class="checkbox visually_hidden" type="checkbox" name="apartments" id="apartments" checked>
           <label class="custom_label" for="apartments">Апартаменты</label>
         </fieldset>
 
-        <fieldset class="range">
-          <legend class="range-title">Стоимость в сутки (<span aria-label="в рублях">р</span>):</legend>
-          <div class="range-controls">
-            <label class="range-label range-label-min" for="price-min">
-              от
-              <output name="priceOutput" aria-hidden="true"></output>
-            </label>
-            <input class="range-input visually-hidden" id="price-min" type="range" name="price" min="0" max="5000"
-                   step="100" value="0">
-            <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="range">
+            <legend class="range-title">Стоимость в сутки (<span aria-label="в рублях">р</span>):</legend>
+            <div class="range-controls">
+      <span>
+        <label class="range-label range-label-min" for="price-min">от</label>
+        <output class="range-output" for="price-min" aria-hidden="true"></output>
+      </span>
+              <input class="range-input visually-hidden" id="price-min" type="range" name="price" min="0" max="5000" step="100" value="0">
+              <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
 
-            <label class="range-label range-label-max" for="price-max">
-              до
-              <output name="priceOutput" aria-hidden="true"></output>
-            </label>
-            <input class="range-input visually-hidden" id="price-max" type="range" name="price" min="0" max="5000"
-                   step="100" value="3000">
-            <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
-            <div class="range-scale">
-              <div class="range-bar"></div>
+              <span>
+        <label class="range-label range-label-max" for="price-max">до</label>
+        <output class="range-output" for="price-max" aria-hidden="true"></output>
+      </span>
+              <input class="range-input visually-hidden" id="price-max" type="range" name="price" min="0" max="5000" step="100" value="3000">
+              <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
+              <div class="range-scale">
+                <div class="range-bar"></div>
+              </div>
             </div>
-          </div>
-          <button class="form_btn" type="submit">Показать</button>
-        </fieldset>
+          </fieldset>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </form>
       </form>
     </div>
     <div class="serch_result">
@@ -86,8 +86,8 @@
         <li class="sort_item"><a class="sort_link">По рейтингу</a></li>
       </ul>
       <div class="sort_btns">
-        <button class="sort_btn sort_btn_up"><span class="visyally_hidden">По возрастанию</span></button>
-        <button class="sort_btn sort_btn_down sort_btn_active"><span class="visyally_hidden">По убыванию</span></button>
+        <button class="sort_btn sort_btn_up"><span class="visually_hidden">По возрастанию</span></button>
+        <button class="sort_btn sort_btn_down sort_btn_active"><span class="visually_hidden">По убыванию</span></button>
       </div>
     </div>
     <section class="hotels">
@@ -128,7 +128,7 @@
               <div class="hotel_desc">
                 <h3 class="hotel_title"><a class="hotel_link" href="#">Desert Quail Inn</h3></a>
                 <p class="hotel_info">
-                  <span class="hotel_type">Мотель</span>
+                  <span class="hotel_type" type="block">Мотель</span>
                   <span class="hotel_price">От 3000 р.</span>
                 </p>
                 <div class="hotel_btns">
@@ -184,9 +184,10 @@
       #visitsedona
     </a>
     <ul class="social_list">
-      <li class="social_item"><a class="social_button" href="#">Твитер</a></li>
-      <li class="social_item"><a class="social_button" href="#">Фейсбук</a></li>
-      <li class="social_item"><a class="social_button" href="#">Ютуб</a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Твиттер</span><svg width="17" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Фейсбук</span><svg width="12" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Ютуб</span>
+        <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
     </ul>
     <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
       <span>website by</span>

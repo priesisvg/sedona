@@ -46,14 +46,17 @@
 
           <ul class="advantages_list">
             <li class="advantages_item">
+              <img class="home" src="img/icon-1.svg">
               <h4 class="advantage_title">Жильё</h4>
               <p class="advantage_desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advantages_item">
+              <img class="home" src="img/icon-3.svg">
               <h4 class="advantage_title">Еда</h4>
               <p class="advantage_desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages_item">
+              <img class="home" src="img/icon-2.svg">
               <h4 class="advantage_title">Сувениры</h4>
               <p class="advantage_desc">Не только китайского но и местного производства!</p>
             </li>
@@ -102,27 +105,29 @@
 
       <form class="search_form">
         <div class="data_change">
-          <label class="search_label" for="check_in">Дата заезда</label>
-          <input class="search_date" type="date" name="check_in" id="check_in" value="2017-04-24">
-          <button class="calendar_btn" type="button"><span class="visually-hidden">Вызов календаря</span></button>
+          <label class="search_label" for="check_in">Дата заезда:</label>
+          <input class="search_date" type="text" name="check_in" id="check_in" value="2017-04-24">
+          <button class="calendar_btn" type="button"><span class="visually_hidden">Вызов календаря</span>
+            <img src="img/calendar.svg"></button>
         </div>
         <div class="data_change">
-          <label class="search_label" for="check_out">Дата выезда</label>
-          <input class="search_date" type="date" name="check_out" id="check_out" value="2017-07-04">
-          <button class="calendar_btn" type="button"><span class="visually-hidden">Вызов календаря</span></button>
+          <label class="search_label" for="check_out">Дата выезда:</label>
+          <input class="search_date" type="text" name="check_out" id="check_out" value="2017-07-04">
+          <button class="calendar_btn" type="button"><span class="visually_hidden">Вызов календаря</span>
+            <img src="img/calendar.svg"></button>
         </div>
         <div class="guest_amount">
           <div class="guest_adult">
             <label class="search_label" for="adult_amount">Взрослые:</label>
-            <button class="btn_minus" type="button"><span class="visually-hidden">Уменьшить на одного</span></button>
+            <button class="btn_minus" type="button"><span class="visually_hidden">Уменьшить на одного</span></button>
             <input type="number" name="adult_amount" id="adult_amount" min="1" value="2">
-            <button class="btn_plus" type="button"><span class="visually-hidden">Увеличить на одного</span></button>
+            <button class="btn_plus" type="button"><span class="visually_hidden">Увеличить на одного</span></button>
           </div>
           <div class="guest_kids">
             <label class="search_label" for="kids_amount">Дети:</label>
-            <button class="btn_minus" type="button"><span class="visually-hidden">Уменьшить на одного</span></button>
-            <input type="number" name="child_amount" id="kids_amount" min="0" value="0">
-            <button class="btn_plus" type="button"><span class="visually-hidden">Увеличить на одного</span></button>
+            <button class="btn_minus" type="button"><span class="visually_hidden">Уменьшить на одного</span></button>
+            <input type="text" name="child_amount" id="kids_amount" min="0" value="0">
+            <button class="btn_plus" type="button"><span class="visually_hidden">Увеличить на одного</span></button>
           </div>
         </div>
         <button class="search_btn" type="submit" name="search_btn">Найти</button>
@@ -137,25 +142,16 @@
     <a class="footer_hashtag" href="#">
       #visitsedona
     </a>
-
     <ul class="social_list">
-      <li class="social_item"><a class="social_button" href="#">Твитер</a></li>
-      <li class="social_item"><a class="social_button" href="#">Фейсбук</a></li>
-      <li class="social_item"><a class="social_button" href="#">Ютуб</a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Твиттер</span><svg width="17" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Фейсбук</span><svg width="12" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
+      <li class="social_item"><a class="social_button" href="#"><span class="visually_hidden">Ютуб</span>
+        <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" fill-rule="nonzero" fill="#FFF"/></svg></a></li>
     </ul>
-
-
     <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">
       <span>website by</span>
-
-      <svg class="svg" width="114" height="40" xmlns="http://www.w3.org/2000/svg" fill="#231F20">
-        <path
-          d="M47.066 29.06c.197-.009.392-.045.58-.108v1.435c-.398.153-.82.23-1.245.226a1.758 1.758 0 0 1-1.762-1.079 5.035 5.035 0 0 1-3.313 1.165c-1.593 0-3.07-.895-3.07-2.75 0-2.299 2.11-3.011 3.914-3.011.77.012 1.537.103 2.29.27v-.324c0-1.079-.802-1.91-2.31-1.91a7.681 7.681 0 0 0-3.166.69v-1.833c1.084-.38 2.22-.58 3.366-.594 2.49 0 4.02 1.209 4.02 3.938v3.237a.592.592 0 0 0 .128.429c.097.12.237.194.388.208h.18v.01zm-6.795-1.22c.027.389.205.75.495 1.004.289.253.666.378 1.045.345h.117a3.537 3.537 0 0 0 2.542-1.079v-1.532a10.038 10.038 0 0 0-1.91-.227c-1.054 0-2.278.356-2.278 1.49h-.01zm13.04-6.592a5.183 5.183 0 0 1 2.712.69v1.856a4.237 4.237 0 0 0-2.427-.755 2.885 2.885 0 0 0-2.658 1.427 3.025 3.025 0 0 0 0 3.07 2.885 2.885 0 0 0 2.658 1.426 5.185 5.185 0 0 0 2.564-.69v1.845a6.49 6.49 0 0 1-2.912.615c-2.443.16-4.552-1.732-4.716-4.23v-.442a4.722 4.722 0 0 1 1.23-3.34 4.514 4.514 0 0 1 3.18-1.472h.401-.032zm12.84 7.811c.198-.008.393-.044.58-.107v1.435c-.397.153-.82.23-1.244.226a1.758 1.758 0 0 1-1.762-1.079 5.035 5.035 0 0 1-3.313 1.165c-1.593 0-3.07-.895-3.07-2.75 0-2.299 2.11-3.011 3.914-3.011.77.012 1.537.103 2.29.27v-.324c0-1.079-.802-1.91-2.311-1.91a7.681 7.681 0 0 0-3.165.69v-1.833c1.084-.38 2.22-.58 3.365-.594 2.49 0 4.02 1.209 4.02 3.938v3.237a.592.592 0 0 0 .129.429c.097.12.237.194.388.208h.18v.01zm-6.794-1.219c.027.391.206.754.498 1.008.292.254.671.377 1.053.34h.116a3.537 3.537 0 0 0 2.543-1.078v-1.532a10.038 10.038 0 0 0-1.91-.227c-1.118 0-2.279.356-2.279 1.49h-.021zm17.661-10.52v13.164h-1.74v-1.425a4.061 4.061 0 0 1-3.366 1.662c-2.437-.168-4.33-2.239-4.33-4.737 0-2.497 1.893-4.568 4.33-4.736a3.98 3.98 0 0 1 3.165 1.403v-5.33h1.941zm-4.779 5.633c-1.608 0-2.912 1.333-2.912 2.978 0 1.644 1.304 2.977 2.912 2.977a3.015 3.015 0 0 0 2.828-1.877v-2.158a3.068 3.068 0 0 0-2.807-1.866l-.021-.054zm11.11-1.705c3.492 0 4.705 2.891 4.135 5.492h-6.562c.222 1.618 1.762 2.276 3.366 2.276a6.327 6.327 0 0 0 2.785-.636v1.726c-1 .436-2.08.646-3.165.615-2.67 0-5.012-1.532-5.012-4.769a4.572 4.572 0 0 1 1.145-3.268 4.37 4.37 0 0 1 3.076-1.468h.232v.032zm.095 1.661c-1.322-.099-2.474.915-2.575 2.266v.065h4.906a2.186 2.186 0 0 0-.614-1.71 2.083 2.083 0 0 0-1.675-.62h-.042zm6.045 7.553v-8.966h1.74v1.079a3.982 3.982 0 0 1 2.934-1.37 3 3 0 0 1 2.785 1.51c.793-.882 1.9-1.399 3.07-1.435a3.191 3.191 0 0 1 2.489 1.01c.647.69.971 1.631.887 2.583v5.61h-2.004v-5.556a1.743 1.743 0 0 0-.366-1.262 1.667 1.667 0 0 0-1.132-.626h-.275a2.937 2.937 0 0 0-2.184 1.208v6.237H95.43v-5.557a1.742 1.742 0 0 0-.38-1.266 1.666 1.666 0 0 0-1.15-.611h-.21a3.152 3.152 0 0 0-2.333 1.392v6.074h-1.825l-.042-.054zm22.483-8.988h2.005l-4.126 10.207c-.95 2.342-2.205 3.086-3.534 3.086a4.917 4.917 0 0 1-1.16-.15v-1.695c.29.09.593.133.896.13.95 0 1.667-.69 2.184-2.05l.18-.454-4.22-9.063h2.11l3.017 6.787 2.648-6.798zM40.862 1.633v5.135a3.976 3.976 0 0 1 2.849-1.23 3.387 3.387 0 0 1 2.614 1.007 3.55 3.55 0 0 1 1.015 2.662v5.556h-1.973V9.466a1.984 1.984 0 0 0-.41-1.44 1.899 1.899 0 0 0-1.289-.718h-.316a3.081 3.081 0 0 0-2.448 1.5v5.955H38.9V1.633h2.004-.042zm11.827.917v3.237h3.165v1.726H52.69v4.11c0 1.188.528 1.576 1.667 1.576.611 0 1.217-.12 1.783-.356v1.726a7.03 7.03 0 0 1-2.332.378 2.653 2.653 0 0 1-2.197-.743 2.786 2.786 0 0 1-.82-2.213v-4.5h-1.646V5.733h1.583v-2.72l1.962-.463zm5.697 12.203V5.754h1.752v1.08a3.983 3.983 0 0 1 2.922-1.382 2.998 2.998 0 0 1 2.743 1.435c.793-.882 1.9-1.4 3.07-1.435.94-.037 1.85.347 2.491 1.052.64.704.949 1.66.843 2.617v5.62h-2.004V9.186a1.743 1.743 0 0 0-.366-1.262 1.667 1.667 0 0 0-1.132-.626h-.243a2.937 2.937 0 0 0-2.184 1.209v6.236h-2.005V9.185a1.743 1.743 0 0 0-.365-1.262 1.667 1.667 0 0 0-1.133-.626h-.242A3.152 3.152 0 0 0 60.2 8.69v6.074h-1.815v-.01zM75.088 1.622h1.93v13.11h-1.93V1.621zM15.52.057h-.17L0 1.72v28.775l15.35 9.344 15.352-9.344V1.72L15.52.057zm13.188 29.24L15.35 37.432 2.005 29.318V17.515l13.283 8.092v1.424l-9.105-5.503v1.414l9.157 5.621v1.5l-9.147-5.567v1.456l9.158 5.621 9.232-5.653v-6.107l4.114-2.492v11.997l.01-.021zm0-13.52l-3.672 2.159-1.688 1.078-8.04-4.93v1.413l6.848 4.23-.148.097-1.055.582-5.665-3.452v1.445l4.473 2.72-1.055.722-3.376-2.05v1.414l2.215 1.338-2.247 1.36-13.188-8.04L15.31 7.73l13.399 8.049zm0-1.424l-13.42-8.08-13.273 8.08V3.563L15.361 2.13l13.347 1.435v10.79z"
-          fill-rule="nonzero"/>
-      </svg>
+      <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Лого HTML Академии">
     </a>
-
-
   </footer>
 </div>
 </body>
