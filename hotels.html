@@ -50,31 +50,22 @@
           <input class="checkbox visually_hidden" type="checkbox" name="apartments" id="apartments" checked>
           <label class="custom_label" for="apartments">Апартаменты</label>
         </fieldset>
-
-        <form class="form" action="https://echo.htmlacademy.ru">
-          <fieldset class="range">
-            <legend class="range-title"><span class="form1">Стоимость в сутки</span> (<span aria-label="в рублях">р</span>):</legend>
-            <div class="range-controls">
-      <span>
-        <label class="range-label range-label-min" for="price-min">от</label>
-        <output class="range-output" for="price-min" aria-hidden="true"></output>
-      </span>
-              <input class="range-input visually-hidden" id="price-min" type="range" name="price" min="0" max="5000" step="100" value="0">
-              <label class="range-lever range-lever-min" for="price-min" aria-hidden="true"></label>
-
-              <span>
-        <label class="range-label range-label-max" for="price-max">до</label>
-        <output class="range-output" for="price-max" aria-hidden="true"></output>
-      </span>
-              <input class="range-input visually-hidden" id="price-max" type="range" name="price" min="0" max="5000" step="100" value="3000">
-              <label class="range-lever range-lever-max" for="price-max" aria-hidden="true"></label>
-              <div class="range-scale">
-                <div class="range-bar"></div>
-              </div>
+        <fieldset class="form1">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
-          </fieldset>
-        </form>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </fieldset>
+
       </form>
     </div>
     <div class="serch_result">

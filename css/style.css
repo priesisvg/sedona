@@ -557,9 +557,10 @@ a {
   flex-direction: row;
   align-items: center;
   padding-top: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
   padding-left: 1px;
   padding-right: 10px;
+  opacity: 0.9;
 
 }
 
@@ -663,6 +664,7 @@ a {
   padding-left: 71px;
   padding-top: 18px;
   padding-bottom: 18px;
+  padding-right: 59px;
 }
 
 .hotels_form_container {
@@ -945,8 +947,6 @@ a {
   list-style: none;
   margin-top: 28px;
   margin-bottom: 41px;
-  padding-right: 3px;
-  padding-left: 25px;
 }
 
 .rate_item {
@@ -1157,155 +1157,129 @@ a {
 }
 
 /* --------------------------------------------форма в отелях--------------------------------------------- */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-
-.range {
-  height: 100vh;
-  font-weight: 400;
-  font-family: PT Sans, Arial, sans-serif;
-  width: 318px;
-  padding: 0;
-  border: none;
-  color: hsl(0, 0%, 100%);
-  text-transform: uppercase;
+.form1 {
   margin-left: auto;
 }
 
-.range-title {
+.filter-range-title {
+  margin-bottom: 8px;
+  color: white;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
-  padding-bottom: 0px;
+  padding-top: 6px;
+  padding-left: 3px;
 }
 
-.range-controls {
+.price-controls {
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  height: 32px;
-  margin-top: 9px;
-  margin-bottom: 54px;
-  border: 2px solid hsl(0, 0%, 100%);
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
   border-radius: 2px;
+  padding-left: 16px;
+  width: 318px;
 }
 
-.range-controls::after {
+.price-controls::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 2px;
   height: 22px;
-  background: hsl(0, 0%, 100%);
+  background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
-.range-label {
+.price-controls label {
+  display: inline-block;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 31px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
 }
 
-.range-label::before {
-  content: "";
-  position: absolute;
-  top: 0;
+.price-controls .min-price,
+.price-controls .max-price {
   width: 50%;
-  height: 32px;
 }
 
-.range-label-min::before {
+.price-controls input {
+  width: 35px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.max-price{
+  padding-left: 100px;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
   left: 0;
 }
-.range-label-max::before {
-  right: 0;
-}
 
-.range-scale {
-  position: absolute;
-  bottom: -22px;
-  width: 100%;
-  height: 2px;
-  background: hsla(0, 0%, 100%, 0.3);
-}
-
-.range-bar {
-  position: absolute;
-  /* Здесь и далее расчёты в calc() для понимания, откуда цифры */
-  left: calc(100% * 0 / 5000);
-  right: calc(100% * (5000 - 3000) / 5000);
-  height: 2px;
-  background: hsl(0, 0%, 100%);
-}
-
-.range-lever {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: -32px;
-  z-index: 2;
-  width: 20px;
-  height: 20px;
-  background: hsl(0, 0%, 67%);
-  border: 8px solid hsl(0, 0%, 100%);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 hsla(0, 0%, 0%, 0.2);
-  cursor: grab;
-}
-
-.range-lever:active {
-  cursor: grabbing;
-}
-
-.range-lever:hover {
-  background: hsl(209, 64%, 31%);
-}
-
-.range-lever-min {
-  left: calc(100% * 0 / 5000 - 20px / 2);
-}
-
-.range-lever-max {
-  left: calc(100% * 3000 / 5000 - 20px / 2);
-}
-
-.range-input:focus + .range-lever {
-  box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.5);
+.range-toggle-max {
+  left: 80%;
 }
 
 .btn-transparent {
+  width: 138px;
+  height: 36px;
   display: block;
-  padding: 6px 30px;
+  margin: 0 auto;
   font-size: 14px;
-  line-height: 20px;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid hsl(0, 0%, 100%);
+  border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
-  margin-left: 88px;
+  padding-top: 0px;
+  margin-top: -1px;
+  margin-right: 96px;
 }
 
-.btn-transparent:hover,
-.btn-transparent:focus {
-  color: hsl(0, 0%, 0%);
-  background: hsl(0, 0%, 100%);
-}
-
-.btn-transparent:focus::-moz-focus-inner {
-  border: 0;
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 
