@@ -1216,6 +1216,7 @@ a {
 
 .sort_btn_up {
   cursor: pointer;
+  background-color: transparent;
   background-image: url("../img/icon-up.svg");
   background-repeat: no-repeat;
   border: none;
@@ -1242,6 +1243,7 @@ a {
 
 .sort_btn_down {
   cursor: pointer;
+  background-color: transparent;
   background-image: url("../img/icon-down.svg");
   background-repeat: no-repeat;
   border: none;
