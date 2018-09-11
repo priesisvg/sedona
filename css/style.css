@@ -46,6 +46,7 @@ a {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 16px 2px rgba(158, 156, 158, 0.4);
   box-shadow: 0 0 16px 2px rgba(158, 156, 158, 0.4);
+  overflow: hidden;
 }
 
 .main_header_logo {
@@ -495,7 +496,7 @@ a {
   font: inherit;
   font-weight: bold;
   background-color: #f2f2f2;
-  border: 0px;
+  border: 2px solid transparent;
   width: 346px;
   height: 37px;
   position: relative;
@@ -508,13 +509,13 @@ a {
 }
 
 .calendar_btn {
-  padding: 0;
-  border: none;
   position: absolute;
   right: 11px;
   top: 5px;
+  padding: 0;
   padding-top: 3px;
-  background: #f2f2f2;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -537,6 +538,7 @@ a {
 
 .search_date:focus {
   background-color: #ffffff;
+  border-color: #ebebeb;
 }
 
 .search_btn {
